@@ -1,1 +1,58 @@
 Git Commands 
+
+Basic Git Commands
+git init
+
+This command initiates a new Git repository within a directory. Here’s the basic git init usage:
+
+git init
+To create a new repository while specifying the project’s name, use the following command:
+
+git init [project name]
+git add
+
+This command is used to stage file changes, preparing them for the next commit:
+
+git add file1.txt
+git commit
+
+Use this command to create a commit message for the changes, making them part of your project’s history:
+
+git commit -m "Add new feature"
+git status
+
+This command displays valuable insights into your files’ modifications and staging status.
+
+git status
+git log
+
+The basic git log usage lets you view a chronological list of commit history:
+
+git log
+git diff
+
+This command lets you compare changes between your working directory and the most recent commit. For example, this git diff usage identifies the differences in a specific file:
+
+git diff file1.txt
+To compare changes between two commits, use the following:
+
+git diff commit1 commit2
+git rm
+
+This command removes files from your working directory and stages the removal for the next commit.
+
+git rm file1.txt
+git mv
+
+Use this command to rename and move files within your working directory. Here’s the Git command to rename a file:
+
+git mv file1.txt file2.txt
+To move a file to a different directory, enter:
+
+git mv file1.txt new_directory/
+git config
+
+This command configures various aspects of Git, including user information and preferences. For example, enter this command to set your email address for commits:
+
+git config --global user.email "your.email@example.com"
+The –global flag applies the configurations universally, impacting your local repository.
