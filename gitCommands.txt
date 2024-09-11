@@ -1,5 +1,6 @@
 Git Commands 
 
+
 Basic Git Commands
 git init
 
@@ -56,3 +57,47 @@ This command configures various aspects of Git, including user information and p
 
 git config --global user.email "your.email@example.com"
 The –global flag applies the configurations universally, impacting your local repository.
+
+Git Branching and Merging Commands
+git branch
+
+Use this command to manage branches in your Git repository. Here’s the basic git branch usage to list all existing branches:
+
+git branch
+To create a Git branch named “feature”, use:
+
+git branch feature
+To rename a Git branch, enter this command:
+
+git branch -m branch-name new-branch-name
+git checkout
+
+This command lets you switch between branches and restore files from different commits.
+
+The following is a git checkout usage to switch to an existing branch:
+
+git checkout branch_name
+To discard changes to a specific file and revert it to the last commit, use:
+
+git checkout -- file_name
+git merge
+
+To combine a feature or topic branch into the main Git branch, use this command. Below is an example of the basic git merge usage:
+
+git merge branch_name
+git cherry-pick
+
+This command allows you to apply specific commits from one branch to another without merging an entire branch.
+
+git cherry-pick commit_hash
+git rebase
+
+This command is used to apply changes from one Git branch to another by moving or combining commits. It helps maintain a cleaner commit history:
+
+git rebase main
+git tag
+
+This command marks specific points in your Git history, such as v1.0 or v2.0:
+
+git tag v1.0
+
