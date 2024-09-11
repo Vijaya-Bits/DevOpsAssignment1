@@ -101,3 +101,34 @@ This command marks specific points in your Git history, such as v1.0 or v2.0:
 
 git tag v1.0
 
+Git Remote Repository Commands
+git clone
+
+This command creates a copy of a remote repository on your local machine. A basic git clone usage is to clone a repository from GitHub:
+
+git clone https://github.com/username/my-project.git
+git push
+
+This command sends your local Git branch commits to a remote repository, updating it with your latest changes.
+
+For example, you want to push changes from the local repository called “main” to the remote repository named “origin”:
+
+git push origin main
+git pull
+
+This command fetches and integrates changes from a remote repository into your current local branch. Here’s a git pull usage example to pull changes from the master branch:
+
+git pull origin master
+git fetch
+
+To retrieve new commits from a remote repository without automatically merging them into your current branch, use this command:
+
+git fetch origin
+git remote
+
+This command manages remote repositories associated with your local repository. The basic git remote usage lists the remote repository:
+
+git remote
+To add a new remote repository, specify its name and URL. For example:
+
+git remote add origin https://github.com/username/origin.git
