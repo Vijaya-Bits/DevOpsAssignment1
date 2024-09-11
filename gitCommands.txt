@@ -1,0 +1,178 @@
+Git Commands 
+
+
+Basic Git Commands
+git init
+
+This command initiates a new Git repository within a directory. Here’s the basic git init usage:
+
+git init
+To create a new repository while specifying the project’s name, use the following command:
+
+git init [project name]
+git add
+
+This command is used to stage file changes, preparing them for the next commit:
+
+git add file1.txt
+git commit
+
+Use this command to create a commit message for the changes, making them part of your project’s history:
+
+git commit -m "Add new feature"
+git status
+
+This command displays valuable insights into your files’ modifications and staging status.
+
+git status
+git log
+
+The basic git log usage lets you view a chronological list of commit history:
+
+git log
+git diff
+
+This command lets you compare changes between your working directory and the most recent commit. For example, this git diff usage identifies the differences in a specific file:
+
+git diff file1.txt
+To compare changes between two commits, use the following:
+
+git diff commit1 commit2
+git rm
+
+This command removes files from your working directory and stages the removal for the next commit.
+
+git rm file1.txt
+git mv
+
+Use this command to rename and move files within your working directory. Here’s the Git command to rename a file:
+
+git mv file1.txt file2.txt
+To move a file to a different directory, enter:
+
+git mv file1.txt new_directory/
+git config
+
+This command configures various aspects of Git, including user information and preferences. For example, enter this command to set your email address for commits:
+
+git config --global user.email "your.email@example.com"
+The –global flag applies the configurations universally, impacting your local repository.
+
+Git Branching and Merging Commands
+git branch
+
+Use this command to manage branches in your Git repository. Here’s the basic git branch usage to list all existing branches:
+
+git branch
+To create a Git branch named “feature”, use:
+
+git branch feature
+To rename a Git branch, enter this command:
+
+git branch -m branch-name new-branch-name
+git checkout
+
+This command lets you switch between branches and restore files from different commits.
+
+The following is a git checkout usage to switch to an existing branch:
+
+git checkout branch_name
+To discard changes to a specific file and revert it to the last commit, use:
+
+git checkout -- file_name
+git merge
+
+To combine a feature or topic branch into the main Git branch, use this command. Below is an example of the basic git merge usage:
+
+git merge branch_name
+git cherry-pick
+
+This command allows you to apply specific commits from one branch to another without merging an entire branch.
+
+git cherry-pick commit_hash
+git rebase
+
+This command is used to apply changes from one Git branch to another by moving or combining commits. It helps maintain a cleaner commit history:
+
+git rebase main
+git tag
+
+This command marks specific points in your Git history, such as v1.0 or v2.0:
+
+git tag v1.0
+
+Git Remote Repository Commands
+git clone
+
+This command creates a copy of a remote repository on your local machine. A basic git clone usage is to clone a repository from GitHub:
+
+git clone https://github.com/username/my-project.git
+git push
+
+This command sends your local Git branch commits to a remote repository, updating it with your latest changes.
+
+For example, you want to push changes from the local repository called “main” to the remote repository named “origin”:
+
+git push origin main
+git pull
+
+This command fetches and integrates changes from a remote repository into your current local branch. Here’s a git pull usage example to pull changes from the master branch:
+
+git pull origin master
+git fetch
+
+To retrieve new commits from a remote repository without automatically merging them into your current branch, use this command:
+
+git fetch origin
+git remote
+
+This command manages remote repositories associated with your local repository. The basic git remote usage lists the remote repository:
+
+git remote
+To add a new remote repository, specify its name and URL. For example:
+
+git remote add origin https://github.com/username/origin.git
+Advanced Git Commands
+git reset
+
+This command is for undoing changes and manipulating the commit history. Here’s a basic git reset usage example to unstage changes:
+
+git reset file1.txt
+git stash
+
+To store temporary changes that are not yet ready to be committed, use this command:
+
+git stash
+To see a list of stashes:
+
+git stash list
+To apply the most recent stash and remove it from the stash list:
+
+git stash pop
+git bisect
+
+This command is primarily used for identifying bugs or issues in your project’s history. To start the bisecting process, use this command:
+
+git bisect start
+Git will automatically navigate you through commits to find the problematic ones using the following:
+
+git bisect run <test-script>
+git blame
+
+This command determines the author and the most recent change to each file line:
+
+git blame file1.txt
+git reflog
+
+This command logs Git branch changes. It allows you to track your repository’s timeline, even when commits are deleted or lost:
+
+git reflog
+git clean
+
+Last but not least, this command removes untracked files from your working directory, resulting in a clean and organized repository:
+
+git clean [options]
+The [options] can be customized based on your specific needs, such as -n for a dry run, -f for force, or -d for directories.
+
+
+
