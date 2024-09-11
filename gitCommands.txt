@@ -132,3 +132,45 @@ git remote
 To add a new remote repository, specify its name and URL. For example:
 
 git remote add origin https://github.com/username/origin.git
+Advanced Git Commands
+git reset
+
+This command is for undoing changes and manipulating the commit history. Here’s a basic git reset usage example to unstage changes:
+
+git reset file1.txt
+git stash
+
+To store temporary changes that are not yet ready to be committed, use this command:
+
+git stash
+To see a list of stashes:
+
+git stash list
+To apply the most recent stash and remove it from the stash list:
+
+git stash pop
+git bisect
+
+This command is primarily used for identifying bugs or issues in your project’s history. To start the bisecting process, use this command:
+
+git bisect start
+Git will automatically navigate you through commits to find the problematic ones using the following:
+
+git bisect run <test-script>
+git blame
+
+This command determines the author and the most recent change to each file line:
+
+git blame file1.txt
+git reflog
+
+This command logs Git branch changes. It allows you to track your repository’s timeline, even when commits are deleted or lost:
+
+git reflog
+git clean
+
+Last but not least, this command removes untracked files from your working directory, resulting in a clean and organized repository:
+
+git clean [options]
+The [options] can be customized based on your specific needs, such as -n for a dry run, -f for force, or -d for directories.
+
