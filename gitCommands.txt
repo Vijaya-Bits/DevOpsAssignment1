@@ -176,3 +176,5 @@ The [options] can be customized based on your specific needs, such as -n for a d
 
 
 
+Adding command for force push
+git push origin <branch-name> --force
